@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+
+/* ===== react-datepicker DARK MODE FIX ===== */
+
+.react-datepicker {
+  background-color: #2f2f2f !important;
+  border: none;
+  color: white;
+}
+
+.react-datepicker__header {
+  background-color: #3a3a3a !important;
+  border-bottom: 1px solid #555;
+}
+
+.react-datepicker__month-text {
+  color: #bbb !important;
+}
+
+.react-datepicker__month-text:hover {
+  background-color: #4b5563 !important;
+  color: white !important;
+}
+
+/* 🔥 IMPORTANT: SELECTED MONTH */
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--keyboard-selected {
+  background-color: #facc15 !important; /* yellow */
+  color: black !important;
+  font-weight: bold;
+}
+
+/* year label */
+.react-datepicker__current-month {
+  color: white !important;
+}

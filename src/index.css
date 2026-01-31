@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bgMove {
+  0% {
+    transform: scale(1);
+  }
+
+}
+
+.animate-bg {
+  animation: bgMove 25s ease-in-out infinite;
+}
+html, body {
+  overflow-x: hidden;
+}
